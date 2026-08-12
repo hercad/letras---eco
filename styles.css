@@ -1,267 +1,91 @@
-/* --- TOKENS SISTEMA VISUAL PAPEL Y TINTA --- */
-:root {
-    --bg-paper: #FBF9F5;
-    --bg-card: #FFFFFF;
-    --text-ink: #1A2847;
-    --text-body: #1F2937;
-    --accent-amber: #D97706;
-    --accent-hover: #B45309;
-    --border-color: #E5E7EB;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Inter', system-ui, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: var(--font-sans);
-    background-color: var(--bg-paper);
-    color: var(--text-body);
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* --- HEADER & NAVIGATION --- */
-.navbar {
-    background-color: var(--bg-card);
-    border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-}
-
-.logo {
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    color: var(--text-ink);
-    font-weight: 700;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: var(--text-body);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--accent-amber);
-}
-
-/* --- HERO SECTION --- */
-main {
-    padding: 30px 0;
-}
-
-.hero {
-    background-color: var(--text-ink);
-    color: #FFFFFF;
-    text-align: center;
-    padding: 50px 20px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-}
-
-.hero h2 {
-    font-family: var(--font-serif);
-    font-size: 2.2rem;
-    margin-bottom: 12px;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    color: #94A3B8;
-    margin-bottom: 24px;
-}
-
-/* --- BOTONES (CTA) --- */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-}
-
-.btn-hero {
-    background-color: var(--accent-amber);
-    color: #FFFFFF;
-}
-
-.btn-hero:hover {
-    background-color: var(--accent-hover);
-}
-
-.btn-buy {
-    width: 100%;
-    background-color: var(--text-ink);
-    color: #FFFFFF;
-    margin-top: 12px;
-}
-
-.btn-buy:hover {
-    background-color: var(--accent-amber);
-}
-
-/* --- CATÁLOGO Y TARJETAS (ATOMIC CARDS) --- */
-.catalog-section {
-    margin-bottom: 40px;
-}
-
-.section-title {
-    font-family: var(--font-serif);
-    font-size: 1.75rem;
-    color: var(--text-ink);
-    margin-bottom: 24px;
-}
-
-.books-grid {
+/* --- ESTILOS SECCIÓN CONTACTO --- */
+.contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.book-card {
+.contact-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 12px;
+    padding: 28px;
     box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.book-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
-}
-
-/* Relación de aspecto 3:4 para las portadas */
-.book-cover {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-    background-color: #E2E8F0;
-}
-
-.book-cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.book-details {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.category {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--accent-amber);
-    letter-spacing: 0.05em;
-    margin-bottom: 4px;
-}
-
-.book-title {
+.contact-card h3 {
     font-family: var(--font-serif);
-    font-size: 1.15rem;
     color: var(--text-ink);
-    line-height: 1.3;
-    margin-bottom: 6px;
-    
-    /* Truncado a 2 líneas */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    font-size: 1.35rem;
+    margin-bottom: 20px;
 }
 
-.book-author {
+/* Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
     font-size: 0.875rem;
-    color: #64748B;
-    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--text-ink);
 }
 
-.book-price {
-    font-size: 1.2rem;
-    font-weight: 700;
+.form-group input,
+.form-group textarea {
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    background-color: var(--bg-paper);
+    color: var(--text-body);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-amber);
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Información de Contacto y Mapa */
+.info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.info-item strong {
+    font-size: 0.85rem;
     color: var(--accent-amber);
-    margin-top: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-/* --- FOOTER --- */
-footer {
-    background-color: var(--text-ink);
-    color: #94A3B8;
-    padding: 24px 0;
-    text-align: center;
-    font-size: 0.875rem;
+.info-item p {
+    font-size: 0.95rem;
+    color: var(--text-body);
+    margin-top: 2px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 12px 0;
-        gap: 10px;
-    }
-
-    .hero h2 {
-        font-size: 1.6rem;
-    }
-}
-
-/* --- ESTILOS PÁGINA CATÁLOGO --- */
-.catalog-header {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.catalog-subtitle {
-    font-size: 1.05rem;
-    color: #64748B;
-    margin-top: -10px;
-}
-
-.logo a {
-    color: inherit;
-    text-decoration: none;
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
 }
