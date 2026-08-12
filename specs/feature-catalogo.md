@@ -1,18 +1,15 @@
 # Spec 01: Modernización del Catálogo y Header
 
 ## 1. Objetivo
-Transformar el prototipo básico de la tienda de libros en una interfaz moderna y adaptativa para usuarios web y móviles.
+Transformar el prototipo básico en una interfaz moderna aplicando la atmósfera "Papel y Tinta" definida en la arquitectura general.
 
-## 2. Requerimientos de la Interfaz (UI)
-* **Header:** 
-  - Logotipo alineado a la izquierda.
-  - Navegación alineada a la derecha.
-  - Menú pegajoso (*sticky*) al hacer scroll.
-* **Sección Hero:**
-  - Fondo oscuro con llamado a la acción (botón principal hacia el catálogo).
-* **Catálogo de Libros:**
-  - Disposición en Cuadrícula (*Grid*) adaptable a celulares y pantallas grandes.
-  - Cada tarjeta debe incluir: Imagen de portada, Categoría, Título, Descripción breve, Precio y Botón "Añadir al carrito".
+## 2. Requerimientos Especificos
+* **Diseño Global:** Aplicar el esquema de colores marfil (`#FBF9F5`), azul tinta (`#1A2847`) y tipografía híbrida (Serif para títulos, Sans-Serif para cuerpo) especificado en `ARCHITECTURE.md`.
+* **Header:** Logo a la izquierda, menú a la derecha y comportamiento *sticky*.
+* **Hero Section:** Fondo azul tinta `#1A2847` con llamado a la acción en ámbar `#D97706`.
+* **Catálogo de Libros:** 
+  - Cuadrícula responsive.
+  - Tarjetas de producto con portadas en proporción 3:4, título en Serif, autor, precio destacado y botón de compra.
 
 ## 3. Archivos Afectados
 * `index.html`
