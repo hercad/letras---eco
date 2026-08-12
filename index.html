@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda de Libros</title>
-    <!-- Tipografía Híbrida: Playfair Display (Serif) + Inter (Sans-Serif) -->
+    <title>Tu Tienda de Libros - Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -13,11 +12,11 @@
 <body>
     <header class="navbar">
         <div class="container nav-container">
-            <h1 class="logo">Tu Tienda de Libros</h1>
+            <h1 class="logo"><a href="index.html">Tu Tienda de Libros</a></h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="active">Inicio</a></li>
-                    <li><a href="#libros">Catálogo</a></li>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -30,54 +29,52 @@
             <section class="hero">
                 <h2>Descubre los Mejores Libros</h2>
                 <p>Explora nuestra selección editorial y sumérgete en historias fascinantes.</p>
-                <a href="#libros" class="btn btn-hero">Ver Catálogo</a>
+                <a href="catalogo.html" class="btn btn-hero">Ver Catálogo</a>
             </section>
 
-            <!-- Sección de Catálogo -->
-            <section id="libros" class="catalog-section">
+            <!-- Sección Vista Previa -->
+            <section class="catalog-section">
                 <h3 class="section-title">Destacados de la Semana</h3>
                 
                 <div class="books-grid">
-                    
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400" alt="El camino del héroe">
+                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400" alt="Don Quijote">
                         </div>
                         <div class="book-details">
-                            <span class="category">Ficción</span>
-                            <h4 class="book-title">El camino del héroe</h4>
-                            <p class="book-author">Por Gabriel García</p>
-                            <p class="book-price">$18.99 USD</p>
+                            <span class="category">Clásico</span>
+                            <h4 class="book-title">Don Quijote de la Mancha</h4>
+                            <p class="book-author">Por Miguel de Cervantes</p>
+                            <p class="book-price">$22.00 USD</p>
                             <button class="btn btn-buy">Añadir al carrito</button>
                         </div>
                     </article>
 
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400" alt="Código Limpio & Arquitectura">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400" alt="Cien años de soledad">
                         </div>
                         <div class="book-details">
-                            <span class="category">Tecnología</span>
-                            <h4 class="book-title">Código Limpio & Arquitectura</h4>
-                            <p class="book-author">Por Alex Rand</p>
-                            <p class="book-price">$24.50 USD</p>
+                            <span class="category">Realismo Mágico</span>
+                            <h4 class="book-title">Cien años de soledad</h4>
+                            <p class="book-author">Por Gabriel García Márquez</p>
+                            <p class="book-price">$19.50 USD</p>
                             <button class="btn btn-buy">Añadir al carrito</button>
                         </div>
                     </article>
 
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=400" alt="Enfoque y Hábitos">
+                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=400" alt="1984">
                         </div>
                         <div class="book-details">
-                            <span class="category">Productividad</span>
-                            <h4 class="book-title">Enfoque y Hábitos</h4>
-                            <p class="book-author">Por Elena Torres</p>
-                            <p class="book-price">$15.00 USD</p>
+                            <span class="category">Distopía</span>
+                            <h4 class="book-title">1984</h4>
+                            <p class="book-author">Por George Orwell</p>
+                            <p class="book-price">$16.00 USD</p>
                             <button class="btn btn-buy">Añadir al carrito</button>
                         </div>
                     </article>
-
                 </div>
             </section>
         </div>
