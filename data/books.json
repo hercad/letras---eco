@@ -1,0 +1,102 @@
+[
+  {
+    "id": "book-01",
+    "title": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes",
+    "category": "Clásico",
+    "price": 22.00,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400",
+    "featured": true
+  },
+  {
+    "id": "book-02",
+    "title": "Cien años de soledad",
+    "author": "Gabriel García Márquez",
+    "category": "Realismo Mágico",
+    "price": 19.50,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400",
+    "featured": true
+  },
+  {
+    "id": "book-03",
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Distopía",
+    "price": 16.00,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=400",
+    "featured": true
+  },
+  {
+    "id": "book-04",
+    "title": "Orgullo y prejuicio",
+    "author": "Jane Austen",
+    "category": "Romance Clásico",
+    "price": 15.50,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  },
+  {
+    "id": "book-05",
+    "title": "La Odisea",
+    "author": "Homero",
+    "category": "Épico",
+    "price": 18.00,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  },
+  {
+    "id": "book-06",
+    "title": "Crimen y castigo",
+    "author": "Fiódor Dostoyevski",
+    "category": "Psicológico",
+    "price": 21.00,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  },
+  {
+    "id": "book-07",
+    "title": "El Gran Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Ficción",
+    "price": 14.99,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  },
+  {
+    "id": "book-08",
+    "title": "Ulises",
+    "author": "James Joyce",
+    "category": "Vanguardia",
+    "price": 25.00,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  },
+  {
+    "id": "book-09",
+    "title": "En busca del tiempo perdido",
+    "author": "Marcel Proust",
+    "category": "Filosófico",
+    "price": 28.00,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  },
+  {
+    "id": "book-10",
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "category": "Dramaturgia",
+    "price": 13.50,
+    "currency": "USD",
+    "coverUrl": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=400",
+    "featured": false
+  }
+]

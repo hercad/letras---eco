@@ -1,89 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda de Libros - Inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LETRAS---ECO | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <h1 class="logo"><a href="index.html">Tu Tienda de Libros</a></h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body data-page="inicio">
 
-    <main>
-        <div class="container">
-            <!-- Hero Section -->
-            <section class="hero">
-                <h2>Descubre los Mejores Libros</h2>
-                <p>Explora nuestra selección editorial y sumérgete en historias fascinantes.</p>
-                <a href="catalogo.html" class="btn btn-hero">Ver Catálogo</a>
-            </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-content">
+        <h1 class="serif-title">Atmósfera Papel y Tinta</h1>
+        <p>Una experiencia de lectura editorial, sobria y elegante.</p>
+        <a href="catalogo.html" class="btn btn-amber">Ver Catálogo Completo</a>
+      </div>
+    </section>
 
-            <!-- Sección Vista Previa -->
-            <section class="catalog-section">
-                <h3 class="section-title">Destacados de la Semana</h3>
-                
-                <div class="books-grid">
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400" alt="Don Quijote">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Clásico</span>
-                            <h4 class="book-title">Don Quijote de la Mancha</h4>
-                            <p class="book-author">Por Miguel de Cervantes</p>
-                            <p class="book-price">$22.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
+    <!-- Grilla de Libros Destacados (Hidratada dinámicamente) -->
+    <section class="container featured-section">
+      <header class="catalog-header">
+        <h2 class="serif-title">Libros Destacados</h2>
+        <p>Obras seleccionadas de nuestra colección universal.</p>
+      </header>
+      
+      <div id="books-grid-container" class="books-grid">
+        <!-- Inyección dinámica vía script.js -->
+      </div>
+    </section>
+  </main>
 
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400" alt="Cien años de soledad">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Realismo Mágico</span>
-                            <h4 class="book-title">Cien años de soledad</h4>
-                            <p class="book-author">Por Gabriel García Márquez</p>
-                            <p class="book-price">$19.50 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=400" alt="1984">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Distopía</span>
-                            <h4 class="book-title">1984</h4>
-                            <p class="book-author">Por George Orwell</p>
-                            <p class="book-price">$16.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Tu Tienda de Libros. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>

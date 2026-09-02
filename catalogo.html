@@ -3,175 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda de Libros - Catálogo Histórico</title>
+    <title>LETRAS---ECO | Catálogo Histórico</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <h1 class="logo"><a href="index.html">Tu Tienda de Libros</a></h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="catalogo.html" class="active">Catálogo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body data-page="catalogo">
 
     <main>
         <div class="container">
             <section class="catalog-section">
                 <header class="catalog-header">
-                    <h2 class="section-title">Los 10 Mejores Libros de la Historia</h2>
+                    <h2 class="section-title serif-title">Los 10 Mejores Libros de la Historia</h2>
                     <p class="catalog-subtitle">Una colección imprescindible con las obras cumbre de la literatura universal.</p>
                 </header>
                 
-                <div class="books-grid">
-                    
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400" alt="Don Quijote">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Clásico</span>
-                            <h4 class="book-title">Don Quijote de la Mancha</h4>
-                            <p class="book-author">Por Miguel de Cervantes</p>
-                            <p class="book-price">$22.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400" alt="Cien años de soledad">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Realismo Mágico</span>
-                            <h4 class="book-title">Cien años de soledad</h4>
-                            <p class="book-author">Por Gabriel García Márquez</p>
-                            <p class="book-price">$19.50 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=400" alt="1984">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Distopía</span>
-                            <h4 class="book-title">1984</h4>
-                            <p class="book-author">Por George Orwell</p>
-                            <p class="book-price">$16.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&q=80&w=400" alt="Orgullo y prejuicio">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Romance Clásico</span>
-                            <h4 class="book-title">Orgullo y prejuicio</h4>
-                            <p class="book-author">Por Jane Austen</p>
-                            <p class="book-price">$15.50 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&q=80&w=400" alt="La Odisea">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Épico</span>
-                            <h4 class="book-title">La Odisea</h4>
-                            <p class="book-author">Por Homero</p>
-                            <p class="book-price">$18.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=400" alt="Crimen y castigo">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Psicológico</span>
-                            <h4 class="book-title">Crimen y castigo</h4>
-                            <p class="book-author">Por Fiódor Dostoyevski</p>
-                            <p class="book-price">$21.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=400" alt="El Gran Gatsby">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Ficción</span>
-                            <h4 class="book-title">El Gran Gatsby</h4>
-                            <p class="book-author">Por F. Scott Fitzgerald</p>
-                            <p class="book-price">$14.99 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=400" alt="Ulises">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Vanguardia</span>
-                            <h4 class="book-title">Ulises</h4>
-                            <p class="book-author">Por James Joyce</p>
-                            <p class="book-price">$25.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=400" alt="En busca del tiempo perdido">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Filosófico</span>
-                            <h4 class="book-title">En busca del tiempo perdido</h4>
-                            <p class="book-author">Por Marcel Proust</p>
-                            <p class="book-price">$28.00 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=400" alt="Hamlet">
-                        </div>
-                        <div class="book-details">
-                            <span class="category">Dramaturgia</span>
-                            <h4 class="book-title">Hamlet</h4>
-                            <p class="book-author">Por William Shakespeare</p>
-                            <p class="book-price">$13.50 USD</p>
-                            <button class="btn btn-buy">Añadir al carrito</button>
-                        </div>
-                    </article>
-
+                <!-- Grilla de Libros Hidratada dinámicamente desde books.json -->
+                <div id="books-grid-container" class="books-grid">
+                    <!-- Inyección dinámica vía script.js -->
                 </div>
             </section>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Tu Tienda de Libros. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
