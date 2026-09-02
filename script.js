@@ -20,7 +20,9 @@ function renderLayout() {
   const headerHTML = `
     <header id="main-header" class="site-header navbar">
       <div class="container header-container nav-container">
-        <h1 class="logo-title"><a href="index.html" class="logo">LETRAS---ECO</a></h1>
+        <h1 class="logo-title">
+          <a href="index.html" class="logo">LETRAS <span class="brand-divider">•</span> ECO</a>
+        </h1>
         <nav>
           <ul class="nav-links main-nav">
             <li><a href="index.html" class="${currentPage === 'inicio' ? 'active' : ''}">Inicio</a></li>
@@ -35,7 +37,7 @@ function renderLayout() {
   const footerHTML = `
     <footer class="site-footer">
       <div class="container footer-container">
-        <p>&copy; 2026 LETRAS---ECO. Todos los derechos reservados.</p>
+        <p>&copy; 2026 LETRAS <span class="brand-divider">•</span> ECO. Todos los derechos reservados.</p>
       </div>
     </footer>
   `;
